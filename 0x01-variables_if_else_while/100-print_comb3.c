@@ -1,36 +1,32 @@
-/*
- * File: 10-print_comb2.c
- * Auth: @Muradamen
- */
-
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - Prints the numbers from 00 to 99, numbers separated by
- *        a comma followed by a space, in ascending order.
- *
- * Return: Always 0.
+ * main - Entyr point
+ * Description: prints two digits combination
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int digit1, digit2;
+	int c, i;
 
-	for (digit1 = 0; digit1 < 10; digit1++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (digit2 = 0; digit2 < 10; digit2++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
+			if (c < i)
+			{
+				putchar(c);
+				putchar(i);
 
-			if (digit1 == 9 && digit2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
+
