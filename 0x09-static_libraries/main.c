@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 int main(void)
 {
