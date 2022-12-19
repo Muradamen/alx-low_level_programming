@@ -6,7 +6,7 @@
 /**
  * main - check the code
  *
- * Return: Always EXIT_SUCCESS.
+ * Return:ESS.
  */
 int main(void)
 {
