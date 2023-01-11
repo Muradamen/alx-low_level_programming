@@ -1,7 +1,3 @@
-/*
- * File: 100-sorted_hash_table.c
- * Auth: @Muradamen
- */
 
 #include "hash_tables.h"
 
